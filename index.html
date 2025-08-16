@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Cortex — Discord Bot Store</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+  body {
+    background-color: #0a0a0a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('fundo.png') center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .hero img {
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+    margin: 15px 0;
+    color: #1e90ff; /* azul principal */
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+
+  .hero .btn {
+    background: #1e90ff; /* azul principal */
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px;
+  }
+
+  .hero .btn:hover {
+    background: #1c86ee; /* azul hover */
+  }
+
+  /* Cards */
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 20px;
+  }
+
+  .card {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    background: #1e90ff; /* azul hover nos cards */
+    color: #fff;
+  }
+
+  .card h3 {
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: #ccc;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #777;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="inner">
+    <div class="logo">Cortex</div>
+    <div class="menu">
+      <a href="index.html">Início</a>
+      <a href="create.html">Create your Bot</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="auth.html">Conta</a>
+      <a href="portfolio.html#team" class="cta">Equipe</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="cortex-logo.png" alt="Cortex Bot">
+  <h1>Adicione o melhor bot da comunidade</h1>
+  <p>Automatize seu servidor Discord com ferramentas incríveis</p>
+  <a href="https://discord.com/oauth2/authorize?client_id=SEU_ID&permissions=8&scope=bot" class="btn">+ Me Adicione!</a>
+  <a class="btn" href="create.html">Crie seu Bot</a>
+</header>
+
+<main class="container">
+  <section class="cards">
+    <div class="card"><h3>Auto-Mod</h3><p>Moderação inteligente para manter seu servidor seguro.</p></div>
+    <div class="card"><h3>Economia</h3><p>Loja, moedas e ranking para engajar sua comunidade.</p></div>
+    <div class="card"><h3>Tickets</h3><p>Atendimento rápido com logs detalhados.</p></div>
+    <div class="card"><h3>Módulos Extras</h3><p>Funções adicionais para personalizar seu bot.</p></div>
+  </section>
+</main>
+
+<footer class="footer">© Cortex — Discord Bot Store • Todos os direitos reservados</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Create your Bot — Cortex</title><link rel="stylesheet" href="style.css"/></head><body>
+
+<nav class="nav">
+  <div class="inner">
+    <div class="logo">Cortex</div>
+    <div class="menu">
+      <a href="index.html">Início</a>
+      <a href="create.html">Create your Bot</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="auth.html">Conta</a>
+      <a href="portfolio.html#team" class="cta">Equipe</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="min-height:38vh"><img src="hero.png" alt=""/><div class="content">
+  <div class="tag">Preview</div><h1>Create your Bot</h1>
+  <p>Defina as opções e veja a prévia do seu bot. Depois conectamos a um backend com MongoDB.</p>
+</div></header>
+<main class="container">
+  <div class="row">
+    <div class="block">
+      <label class="label">Nome do bot</label><input class="input" id="botName" placeholder="Ex.: Cortex Helper"/>
+      <div style="height:10px"></div>
+      <label class="label">Plataforma</label>
+      <select id="platform" class="input"><option>Discord</option><option>WhatsApp</option><option>Telegram</option></select>
+      <div class="row" style="margin-top:10px">
+        <div><label class="label">Função principal</label>
+          <select class="input" id="mainFeature"><option>Tickets</option><option>Economia</option><option>Auto-Mod</option><option>Loja</option><option>Outros</option></select>
+        </div>
+        <div><label class="label">Tema</label>
+          <select class="input" id="theme"><option>Escuro</option><option>Claro</option></select>
+        </div>
+      </div>
+      <div style="margin-top:10px">
+        <span class="label">Módulos</span>
+        <div>
+          <label class="tag"><input type="checkbox" class="mod" value="Logs"/> Logs</label>
+          <label class="tag"><input type="checkbox" class="mod" value="Dashboard"/> Dashboard</label>
+          <label class="tag"><input type="checkbox" class="mod" value="Anti-Spam"/> Anti-Spam</label>
+          <label class="tag"><input type="checkbox" class="mod" value="Comandos Slash"/> Comandos Slash</label>
+        </div>
+      </div>
+      <div style="margin-top:14px"><button class="btn" onclick="generatePreview()">Gerar Prévia</button></div>
+      <p class="note" style="margin-top:8px">Atalho: <span class="kbd">G</span> para gerar.</p>
+    </div>
+    <div class="block" id="previewBlock">
+      <h3>Pré-visualização</h3>
+      <div id="preview" class="card" style="margin-top:10px">
+        <img src="assets/thumb1.jpg" alt=""/><div id="previewText" style="padding:8px 2px"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">© Cortex — Discord Bot Store • <span class="note">Mockup estático (sem backend)</span></footer>
+
+<script src="scripts.js"></script></body></html>

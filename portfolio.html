@@ -1,0 +1,37 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Portfólio — Cortex</title><link rel="stylesheet" href="style.css"/></head><body>
+
+<nav class="nav">
+  <div class="inner">
+    <div class="logo">Cortex</div>
+    <div class="menu">
+      <a href="index.html">Início</a>
+      <a href="create.html">Create your Bot</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="auth.html">Conta</a>
+      <a href="portfolio.html#team" class="cta">Equipe</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="min-height:30vh"><img src="hero.png" alt=""/><div class="content">
+  <h1>Portfólio</h1><p>Veja os projetos da equipe. Filtre por membro.</p>
+</div></header>
+<main class="container">
+  <div class="block">
+    <div class="row">
+      <div><label class="label">Filtrar por membro</label><select class="input" id="memberFilter" onchange="renderPortfolio()"></select></div>
+      <div><label class="label">Busca</label><input class="input" id="searchInput" placeholder="Digite o nome do projeto..." oninput="renderPortfolio()"/></div>
+    </div>
+  </div>
+  <section class="gallery" id="portfolioGallery"></section>
+  <section id="team" style="margin-top:24px">
+    <h2>Equipe</h2>
+    <table class="table" id="teamTable"><thead><tr><th>Membro</th><th>Projetos</th></tr></thead><tbody></tbody></table>
+  </section>
+</main>
+
+<footer class="footer">© Cortex — Discord Bot Store • <span class="note">Gerenciado apenas pela equipe</span></footer>
+
+<script src="scripts.js"></script></body></html>
